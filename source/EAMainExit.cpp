@@ -57,7 +57,7 @@ namespace EA {
             // Do nothing. No solution for signal/exception handling on this platform yet.
         }
 
-#elif defined(EA_PLATFORM_WINDOWS) || defined(EA_PLATFORM_XBOXONE) || defined(EA_PLATFORM_CAPILANO) || defined(CS_UNDEFINED_STRING)
+#elif defined(EA_PLATFORM_WINDOWS) || defined(EA_PLATFORM_XBOXONE) || defined(EA_PLATFORM_CAPILANO) || defined(EA_PLATFORM_WASM) || defined(CS_UNDEFINED_STRING)
         void InitializeSignalHandler()
         {
             // Do nothing. Unhandled exception filter will handle creating a minidump on
